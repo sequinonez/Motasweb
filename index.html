@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motas, el Perro Callejero</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="decorado">
+        <h1>Motas, el Perro Callejero</h1>
+        <p>Motas es un perro callejero que ha conquistado los corazones de todos con su valentía y carisma.</p>
+    </div>
+    
+    <h2>Su Historia</h2>
+    <p>Rescatado de las calles, Motas ha encontrado un nuevo hogar y muchas personas que lo cuidan y aman.</p>
+    
+    <h2>Galería de Motas</h2>
+    <div class="collage">
+        <img src="{{ url_for('static', filename='imagen1.jpg') }}" alt="Motas jugando">
+        <img src="{{ url_for('static', filename='imagen2.jpg') }}" alt="Motas descansando">
+        <img src="{{ url_for('static', filename='imagen3.jpg') }}" alt="Motas explorando">
+        <img src="{{ url_for('static', filename='imagen4.jpg') }}" alt="Motas con amigos">
+    </div>
+    
+    <h2>Videos de Motas</h2>
+    <div class="videos">
+        <video controls>
+            <source src="{{ url_for('static', filename='Motas.mp4') }}" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+    
+    <h2>Síguelo en sus redes sociales</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/@MotasProyecto" target="_blank">YouTube</a></li>
+        <li><a href="https://www.instagram.com/motas_el_perro" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@el.perro.motas" target="_blank">TikTok</a></li>
+    </ul>
+</body>
+</html>
